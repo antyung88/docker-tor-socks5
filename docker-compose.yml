@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  tor-socks5:
+    image: dev852com/tor-socks5:latest
+    restart: always
+    ports:
+      - 9050:9050
