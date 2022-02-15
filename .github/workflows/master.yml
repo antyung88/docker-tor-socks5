@@ -33,3 +33,13 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          
+      - run: docker build . -t tor-socks5
+      - run: curl -L -O https://downloads.dockerslim.com/releases/1.37.3/dist_linux.tar.gz
+      - run: tar -zxvf dist_linux.tar.gz
+      - run: script -q -c "./dist_linux/docker-slim --debug version"
+      - run: script -q -c "./dist_linux/docker-slim build --target tor-socks5 --http-probe-off --tag ghcr.io/antyung88/tor-socks5.slim"
+      
+      - name: Push
+        run: |
+          docker push ghcr.io/antyung88/tor-socks5.slim
