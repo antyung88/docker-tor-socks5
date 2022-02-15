@@ -16,7 +16,7 @@ jobs:
       - run: curl -L -O https://downloads.dockerslim.com/releases/1.37.3/dist_linux.tar.gz
       - run: tar -zxvf dist_linux.tar.gz
       - run: script -q -c "./dist_linux/docker-slim --debug version"
-      - run: script -q -c "./dist_linux/docker-slim build --target tor-socks5 --http-probe-off --tag tor-socks5.slim"
+      - run: script -q -c "./dist_linux/docker-slim build --target tor-socks5 --tag tor-socks5.slim"
 
       - name: Login to Github Packages
         uses: docker/login-action@v1
