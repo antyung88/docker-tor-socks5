@@ -12,6 +12,10 @@ For Slim Build:
 ```
 docker run --rm --detach --name tor --publish 9050:9050 ghcr.io/antyung88/tor-socks5.slim:latest
 ```
+```
+REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
+ghcr.io/antyung88/tor-socks5.slim   latest    bd4d93d284b7   1 minutes ago   8.51MB
+```
 
 # Browser Configuration
 
