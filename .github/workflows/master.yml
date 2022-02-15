@@ -23,5 +23,5 @@ jobs:
         with:
           context: ./
           tags: |
-            ghcr.io/antyung88/docker-tor-socks5/docker-tor-socks5
+            ghcr.io/antyung88/docker-tor-socks5
           push: ${{ github.ref == 'refs/heads/main' }} 
