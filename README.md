@@ -5,7 +5,7 @@ A Tor proxy is a SOCKS5 proxy which routes your traffic through the Tor network.
 It helps you to anonymize traffic, block trackers and, prevent surveillance amongst other benefits. If you are wondering who should use Tor, the answer is every person who cares about their privacy.
 
 ```
-docker run --rm --detach --name tor --publish 9050:9050 dev852com/tor-socks5
+docker run --rm --detach --name tor --publish 9050:9050 ghcr.io/antyung88/tor-socks5:master
 ```
 
 # Browser Configuration
