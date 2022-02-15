@@ -8,6 +8,11 @@ It helps you to anonymize traffic, block trackers and, prevent surveillance amon
 docker run --rm --detach --name tor --publish 9050:9050 ghcr.io/antyung88/tor-socks5:master
 ```
 
+For Slim Build:
+```
+docker run --rm --detach --name tor --publish 9050:9050 ghcr.io/antyung88/tor-socks5.slim:latest
+```
+
 # Browser Configuration
 
 Recommends using Firefox
