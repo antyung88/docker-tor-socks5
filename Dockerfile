@@ -16,4 +16,5 @@ ENTRYPOINT ["tor"]
 
 # Set the default container command
 # This can be overridden later when running a container
+EXPOSE 9050
 CMD ["-f", "/etc/tor/torrc"]
