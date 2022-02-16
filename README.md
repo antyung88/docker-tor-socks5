@@ -23,4 +23,4 @@ Recommends using Firefox
 
 Settings -> Network Settings -> Settings
 
-![screen-1](https://github.com/dev852com/docker-tor-socks5/blob/main/firefox-tor.png)
+![screen-1](https://github.com/antyung88/docker-tor-socks5/blob/master/firefox-tor.png)
